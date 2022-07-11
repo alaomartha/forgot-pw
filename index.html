@@ -16,32 +16,54 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="./css/index.css">
   <title>Thank you</title>
 </head>
 <body>
 
+  <header>
+    <nav class="navbar bg-white">
+        <a href="#" class="navbar-brand ms-3 ms-lg-4 ms-xl-5">
+            <img src="img/logo.png" alt="Our Logo" class="h-100">
+        </a>
+        <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTwoContent" aria-controls="navbarTwoContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTwoContent">
+            
+        </div>
+    </nav>
+</header>
+
   <div class="container d-flex align-items-center justify-content-center">
-    <div class="forgot-pw bg-neutral-4 mt-5" style="width: 634px; height: 500px;" >
-      <h1 class="text-center ff-montserrat fs-headline-1 fw-700 mt-5 ">Forgot Password</h1>
+    <div class="forgot-pw lg-bg-neutral-4 mt-5" style="width: 634px; height: 500px;" >
+      <h1 class="text-center ff-montserrat fw-bold fs-headline-2 mt-5">Forgot Password</h1>
       <div class="input-icons w-100 mb-5">
         <form action="" class="mx-5">
-        <label for="email" class="mt-4 ff-montserrat fs-tiny fw-500">Email</label> 
-        <div>
-            <img src="./img/mt-email-input.png" alt="" class="icon text-grey-4 mt-3 mx-2 width-40px">
-            <input type="email" name="" id="" required class="form-input-1 fs-copyright w-100 py-3 px-5 mt-1 bdr-rad-2" placeholder="Your Email"> 
-        </div>
-        <label for="id" class="mt-4 ff-montserrat fs-tiny fw-500">Admin ID</label> 
-        <div>
-            <img src="./img/mt-id-input.png" alt="" class="icon text-grey-4 mt-3 mx-2 width-40px">
-            <input type="text" name="id" id="id" required  class="form-input-1 py-3 px-5 mt-1 w-100 bdr-rad-2 fs-copyright" placeholder="Enter ID">
-        </div>
+        <div class="input-group w-100 mb-4 position-relative">
+          <p class="fs-copyright mb-1">Email</p>
+          <input type="email" name="email" id="" class="form-input-1 box-shad-1 w-100 bdr-rad-2 fs-copyright py-3 px-5 mt-1 text-black" placeholder="Email">
+          <img src="img/email-input.png" alt="" class="input-icon">
+      </div>
+        <div class="input-group w-100 mb-4 position-relative">
+          <p class="fs-copyright mb-1">Admin ID</p>
+          <input type="email" name="email" id="" class="form-input-1 box-shad-1 w-100 bdr-rad-2 fs-copyright py-3 px-5 mt-1 text-black" placeholder="Your ID">
+          <img src="img/id-input.png" alt="" class="input-icon">
+      </div>
         
-        <button class="rounded bg-pink-1 py-3 primary-btn mt-5 w-100 bdr-rad-2">Submit</button>
+        <button class="rounded bg-pink-1 py-3 primary-btn mt-5 w-100 bdr-rad-2 box-shad-1">Submit</button>
         </form>
       </div>
     </div>
   </div>
 
+  <script src="js/bootstrap.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+      AOS.init();
+  </script>
 </body>
 </html>
